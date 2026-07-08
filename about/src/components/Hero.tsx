@@ -8,21 +8,21 @@ export default function Hero () {
                 <p>Building software, tools, and stories</p>
                 <div className="direct-download-link">
                     <p>
-                        [
+                        [ &nbsp;
                         <a href="/resume.pdf" download>
                             Download Resume
                         </a>
-                        ]
+                        &nbsp; ]
                     </p>   
                 </div>
             </header>
             <div className="se-block">
                     <h3 className="se-head">
-                        { 
+                        {`{`} &nbsp;
                             <a href="">
                                 Software Engineer
                             </a>
-                        }
+                        &nbsp; {`}`}
                     </h3>
                     <p className="se-sub">
                         code
@@ -39,11 +39,11 @@ export default function Hero () {
             </div>
             <div className="wrtr-block">
                 <h3 className="wrtr-head">
-                    [ 
+                    [ &nbsp;
                         <a href="">
                             Writer
                         </a>
-                    ]
+                    &nbsp; ]
                 </h3>
                 <p className="wrtr-sub">
                     Tech
