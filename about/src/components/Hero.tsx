@@ -1,4 +1,4 @@
-import { ArrowDown } from 'lucide-react'
+import { ArrowDown } from "lucide-react";
 
 export default function Hero () {
     return (
@@ -17,13 +17,13 @@ export default function Hero () {
                 </div>
             </header>
             <div className="se-block">
-                    <h6 className="se-head">
+                    <h3 className="se-head">
                         { 
                             <a href="">
                                 Software Engineer
                             </a>
                         }
-                    </h6>
+                    </h3>
                     <p className="se-sub">
                         code
                         design
@@ -38,13 +38,13 @@ export default function Hero () {
                 <div className="ground-two"></div>
             </div>
             <div className="wrtr-block">
-                <h6 className="wrtr-head">
+                <h3 className="wrtr-head">
                     [ 
                         <a href="">
                             Writer
                         </a>
                     ]
-                </h6>
+                </h3>
                 <p className="wrtr-sub">
                     Tech
                     Fiction
@@ -52,10 +52,10 @@ export default function Hero () {
                 </p>
             </div>
             <footer className="hero-foot">
-                    <h6>
+                    <h3>
                         Dive
-                    </h6>
-                    <ArrowDown color="#20243D"/>
+                    </h3>
+                    {<ArrowDown />}
             </footer>
         </>
     )
