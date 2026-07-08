@@ -4,14 +4,14 @@ import './Hero.css'
 export default function Hero () {
     return (
         <>
-        <div className="hero-bg">
         <div className="hero">
         <section className="sky">
-
+            <div>
+                
             <header className="title">
                 <div>
                     <h1>Gaurav Mali</h1>
-                    <p>Building software, tools, and stories</p>
+                    <p className="hero-subtitle">Building software, tools, and stories</p>
                 </div>
                 <div className="direct-download-link">
                     <p>
@@ -27,9 +27,9 @@ export default function Hero () {
             </header>
             <div className="se-block">
                     <p className="se-sub">
-                        code
-                        design
-                        security
+                        code <br />
+                        design <br />
+                        security <br />
                     </p>
                     <h3 className="se-head">
                         {`{`}&nbsp;
@@ -41,15 +41,18 @@ export default function Hero () {
                         &nbsp;{`}`}
                     </h3>
             </div>
+            </div>
         </section>
         <div className="horizon">
-                <div className="sky-one"></div>
-                <div className="sky-two"></div>
-                <div className="horizon-line"></div>
-                <div className="ground-one"></div>
-                <div className="ground-two"></div>
+            <div className="sky-one"></div>
+            <div className="sky-two"></div>
+            <div className="horizon-line"></div>
+            <div className="ground-one"></div>
+            <div className="ground-two"></div>
         </div>
         <section className="ground">
+            <div>
+                
             <div className="wrtr-block">
                 <h3 className="wrtr-head">
                     [&nbsp;
@@ -61,19 +64,19 @@ export default function Hero () {
                     &nbsp;]
                 </h3>
                 <p className="wrtr-sub">
-                    Tech
-                    Fiction
-                    Realism
+                    Tech <br />
+                    Fiction <br />
+                    Realism <br />
                 </p>
             </div>
             <footer className="hero-foot">
                 <h3>
                     Dive
                 </h3>
-                <ArrowDown color="#20243D"/>
+                <ArrowDown className="arrow" color="#20243D"/>
             </footer>
+            </div>
         </section>
-        </div>
         </div>
         </>
     )
