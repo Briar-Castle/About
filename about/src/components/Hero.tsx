@@ -1,28 +1,38 @@
 import { ArrowDown } from "lucide-react";
+import './Hero.css'
 
 export default function Hero () {
     return (
         <>
+        <div className="hero-bg">
+        <div className="hero">
+
             <header className="title">
-                <h1>Gaurav Mali</h1>
-                <p>Building software, tools, and stories</p>
+                <div>
+                    <h1>Gaurav Mali</h1>
+                    <p>Building software, tools, and stories</p>
+                </div>
                 <div className="direct-download-link">
                     <p>
-                        [ &nbsp;
+                        [&nbsp;
                         <a href="/resume.pdf" download>
-                            Download Resume
+                            <span>
+                                Download Resume
+                            </span>
                         </a>
-                        &nbsp; ]
+                        &nbsp;]
                     </p>   
                 </div>
             </header>
             <div className="se-block">
                     <h3 className="se-head">
-                        {`{`} &nbsp;
+                        {`{`}&nbsp;
                             <a href="">
+                                <span>
                                 Software Engineer
+                                </span>
                             </a>
-                        &nbsp; {`}`}
+                        &nbsp;{`}`}
                     </h3>
                     <p className="se-sub">
                         code
@@ -39,11 +49,13 @@ export default function Hero () {
             </div>
             <div className="wrtr-block">
                 <h3 className="wrtr-head">
-                    [ &nbsp;
+                    [&nbsp;
                         <a href="">
-                            Writer
+                            <span>
+                                Writer
+                            </span>
                         </a>
-                    &nbsp; ]
+                    &nbsp;]
                 </h3>
                 <p className="wrtr-sub">
                     Tech
@@ -57,6 +69,8 @@ export default function Hero () {
                 </h3>
                 <ArrowDown color="#20243D"/>
             </footer>
+        </div>
+        </div>
         </>
     )
 }
