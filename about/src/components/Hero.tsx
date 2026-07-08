@@ -52,10 +52,10 @@ export default function Hero () {
                 </p>
             </div>
             <footer className="hero-foot">
-                    <h3>
-                        Dive
-                    </h3>
-                    {<ArrowDown />}
+                <h3>
+                    Dive
+                </h3>
+                <ArrowDown color="#20243D"/>
             </footer>
         </>
     )
