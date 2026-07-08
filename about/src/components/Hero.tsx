@@ -6,6 +6,7 @@ export default function Hero () {
         <>
         <div className="hero-bg">
         <div className="hero">
+        <section className="sky">
 
             <header className="title">
                 <div>
@@ -25,6 +26,11 @@ export default function Hero () {
                 </div>
             </header>
             <div className="se-block">
+                    <p className="se-sub">
+                        code
+                        design
+                        security
+                    </p>
                     <h3 className="se-head">
                         {`{`}&nbsp;
                             <a href="">
@@ -34,19 +40,16 @@ export default function Hero () {
                             </a>
                         &nbsp;{`}`}
                     </h3>
-                    <p className="se-sub">
-                        code
-                        design
-                        security
-                    </p>
             </div>
-            <div>
+        </section>
+        <div className="horizon">
                 <div className="sky-one"></div>
                 <div className="sky-two"></div>
-                <div className="horizon"></div>
+                <div className="horizon-line"></div>
                 <div className="ground-one"></div>
                 <div className="ground-two"></div>
-            </div>
+        </div>
+        <section className="ground">
             <div className="wrtr-block">
                 <h3 className="wrtr-head">
                     [&nbsp;
@@ -69,6 +72,7 @@ export default function Hero () {
                 </h3>
                 <ArrowDown color="#20243D"/>
             </footer>
+        </section>
         </div>
         </div>
         </>
