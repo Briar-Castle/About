@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('./assets/fonts/') format('woff2'),
+        url('./assets/fonts/Barlow-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('./assets/fonts/Barlow-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Barlow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    src: url('./assets/fonts/BarlowSemiCondensed-Regular.woff2') format('woff2'),
+        url('./assets/fonts/BarlowSemiCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Mono';
+    src: url('./assets/fonts/PTMono-Regular.woff2') format('woff2'),
+        url('./assets/fonts/PTMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
