@@ -13,7 +13,7 @@ export default function Softeng () {
             <div className="sde-intro">
                 <h1>Software Engineer</h1>
                 <div className="sde-content">
-                    <p>Building full stack applications as an excuse to learn infrastructure.</p>
+                    <p className="sde-intro-text">Building full stack applications as an excuse to learn infrastructure.</p>
                     <p>I am Gaurav, pursuing bachelors in Cyber Security.</p>
                     <p>Full stack development became the fastest way for me to learn how modern software is built and deployed.</p>
                     <p>It has largely been an excuse to face infrastructures as problems</p>
