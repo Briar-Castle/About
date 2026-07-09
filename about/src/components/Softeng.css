@@ -17,6 +17,7 @@
         font-family: 'Barlow';
         font-weight: normal;
         font-size: 8rem;
+        margin: 0.5em;
         color: var(--Thistle);
     }
     .sde-content {
@@ -41,7 +42,8 @@
 
 .sde-links {
     
-    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
 
     > div {
@@ -121,6 +123,10 @@
 
     .lab-link {
         background-color: var(--Amethyst);
+
+        p {
+            color: var(--Thistle);
+        }
     }
     .resume-download {
         background-color: var(--Lavender);
