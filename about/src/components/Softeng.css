@@ -17,7 +17,6 @@
         font-family: 'Barlow';
         font-weight: normal;
         font-size: 8rem;
-        margin: 0.5em;
         color: var(--Thistle);
     }
     .sde-content {
@@ -87,8 +86,9 @@
         }
     }
     .thumbnail-container-btn:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         border: 2px dashed white;
+        box-shadow: 0 0 10px;
     }
 
 
