@@ -10,7 +10,8 @@ export default function Softeng () {
 
     return (
         <>
-            <div className="sde-intro">
+        <div className="sde-section">
+            <section className="sde-intro">
                 <h1>Software Engineer</h1>
                 <div className="sde-content">
                     <p className="sde-intro-text">Building full stack applications as an excuse to learn infrastructure.</p>
@@ -19,8 +20,8 @@ export default function Softeng () {
                     <p>It has largely been an excuse to face infrastructures as problems</p>
                     <p>Currently, I am experimenting with <span className="experimenting-content">scheduling, cron jobs, Celery, and Redis</span></p>
                 </div>
-            </div>
-            <div className="sde-links">
+            </section>
+            <section className="sde-links">
                 <div className="lab-link">
                     <p>Check out my featured projects</p>
                     <button onClick={() => openLink("https://labs.briarcastle.com/")}>
@@ -53,7 +54,8 @@ export default function Softeng () {
                         </a>
                     </div>
                 </div>
-            </div>
+            </section>
+        </div>
         </>
     )
 }
