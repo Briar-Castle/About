@@ -69,43 +69,45 @@
         grid-row: 1;
         height: auto;
         width: 100vw;
+        animation: float 2s ease-in-out 2s infinite;
+    }
+
+    .sky-two, .ground-one, .ground-two, .sky-one {
+        position: absolute;
+        height: 50px;
+    }
+
+    .sky-one, .ground-two {
+        width: 40%;
+        background-color: var(--Amethyst);
+        animation: float 2s ease-in-out 0s infinite;
+    }
+
+    .sky-two, .ground-one {
+        width: 49%;
+        background-color: var(--SpaceIndigo);
+        animation: float 2s ease-in-out 1s infinite;
     }
 
     .sky-one {
-        position: absolute;
         top: calc(50% - 100px);
         transform: translateY(-50%);
         left: 0;
-        height: 50px;
-        width: 40%;
-        background-color: var(--Amethyst);
     }
     .sky-two {
-        position: absolute;
         top: calc(50% - 50px);
         transform: translateY(-50%);
         left: 0;
-        height: 50px;
-        width: 48%;
-        background-color: var(--SpaceIndigo);
     }
     .ground-two {
-        position: absolute;
         bottom: calc(50% - 100px);
         transform: translateY(50%);
         right: 0;
-        height: 50px;
-        width: 40%;
-        background-color: var(--Amethyst);
     }
-    .ground-one {
-        position: absolute;
+    .ground-one { 
         bottom: calc(50% - 50px);
         transform: translateY(50%);
         right: 0;
-        height: 50px;
-        width: 48%;
-        background-color: var(--SpaceIndigo);
     }
 
 }
@@ -119,9 +121,33 @@
     bottom: 0;
     left: 50%;
     margin-bottom: 2rem;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h3 {
         font-size: 2.25rem;
         font-family: 'PT Mono';
+        font-weight: normal;
+        margin: 0.5em;
+    }
+
+    .arrow {
+        scale: 1.2;
+    }
+
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 0 0;
+    }
+    50% {
+        box-shadow: 0 0 20px;
+    }
+    100% {
+        box-shadow: 0 0 0;
     }
 }
