@@ -30,14 +30,16 @@ export default function Softeng () {
                 </div>
                 <div className="resume-download">
                     <p>Get my resume</p>
+                    <div>
                     <button>
                         <p>
                             12 July 2026
                         </p>
                         <Download className="download-icon"/>
                     </button>
+                    </div>
                 </div>
-                <div>
+                <div className="find-me">
                     <p>Find me</p>
                     <div className="find-me-links">
                         <a href="maligaurav791@gmail.com">
