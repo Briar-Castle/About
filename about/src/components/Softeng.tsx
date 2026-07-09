@@ -1,3 +1,6 @@
+import { Download } from "lucide-react"
+
+
 export default function Softeng () {
 
     function openLink(link: string | URL) {
@@ -26,7 +29,10 @@ export default function Softeng () {
                 <div className="resume-download">
                     <p>Get my resume</p>
                     <button>
-
+                        <p>
+                            12 July 2026
+                        </p>
+                        <Download className="download-icon"/>
                     </button>
                 </div>
             </div>
