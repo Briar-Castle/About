@@ -1,5 +1,6 @@
 import { Download } from "lucide-react"
 import './Softeng.css'
+import labImg from '../assets/exp-001.webp';
 
 
 export default function Softeng () {
@@ -24,35 +25,37 @@ export default function Softeng () {
             <section className="sde-links">
                 <div className="lab-link">
                     <p>Check out my featured projects</p>
-                    <button onClick={() => openLink("https://labs.briarcastle.com/")}>
-                        <img src="" />
-                    </button>
+                    <div>
+                        <button className="thumbnail-container-btn" onClick={() => openLink("https://labs.briarcastle.com/")}>
+                            <img src={labImg} />
+                        </button>
+                    </div>
                 </div>
                 <div className="resume-download">
                     <p>Get my resume</p>
                     <div>
-                    <button>
-                        <p>
-                            12 July 2026
-                        </p>
-                        <Download className="download-icon"/>
-                    </button>
+                        <button className="resume-download-btn">
+                            <p>
+                                12 July 2026
+                            </p>
+                            <Download className="download-icon"/>
+                        </button>
                     </div>
                 </div>
                 <div className="find-me">
                     <p>Find me</p>
                     <div className="find-me-links">
                         <a href="maligaurav791@gmail.com">
-                            Email
+                            <span>Email</span>
                         </a>
                         <a href="https://briarcastle.com">
-                            Briar Castle
+                            <span>Briar Castle</span>
                         </a>
                         <a href="https://github.com/DODO-unique">
-                            GitHub
+                            <span>GitHub</span>
                         </a>
                         <a href="https://www.linkedin.com/in/gaurav-mali-vicpress">
-                            LinkedIn
+                            <span>LinkedIn</span>
                         </a>
                     </div>
                 </div>
