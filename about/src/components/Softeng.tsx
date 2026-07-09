@@ -1,4 +1,5 @@
 import { Download } from "lucide-react"
+import './Softeng.css'
 
 
 export default function Softeng () {
