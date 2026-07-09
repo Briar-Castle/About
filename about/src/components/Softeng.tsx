@@ -35,6 +35,23 @@ export default function Softeng () {
                         <Download className="download-icon"/>
                     </button>
                 </div>
+                <div>
+                    <p>Find me</p>
+                    <div className="find-me-links">
+                        <a href="maligaurav791@gmail.com">
+                            Email
+                        </a>
+                        <a href="https://briarcastle.com">
+                            Briar Castle
+                        </a>
+                        <a href="https://github.com/DODO-unique">
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/gaurav-mali-vicpress">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
             </div>
         </>
     )
