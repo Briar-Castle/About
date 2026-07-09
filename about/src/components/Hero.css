@@ -69,7 +69,6 @@
         grid-row: 1;
         height: auto;
         width: 100vw;
-        animation: float 2s ease-in-out 2s infinite;
     }
 
     .sky-two, .ground-one, .ground-two, .sky-one {
@@ -80,13 +79,11 @@
     .sky-one, .ground-two {
         width: 40%;
         background-color: var(--Amethyst);
-        animation: float 2s ease-in-out 0s infinite;
     }
 
     .sky-two, .ground-one {
         width: 49%;
         background-color: var(--SpaceIndigo);
-        animation: float 2s ease-in-out 1s infinite;
     }
 
     .sky-one {
@@ -140,14 +137,13 @@
 
 }
 
-@keyframes float {
-    0% {
-        box-shadow: 0 0 0;
+@keyframes riseUp {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
     }
-    50% {
-        box-shadow: 0 0 20px;
-    }
-    100% {
-        box-shadow: 0 0 0;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
