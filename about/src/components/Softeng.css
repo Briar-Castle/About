@@ -69,7 +69,7 @@
     .thumbnail-container-btn {
         height: 100%;
         width: 100%;
-        max-width: 190px;
+        max-width: 300px;
         max-height: 360px;
         /* box-sizing: border-box;
         padding: 10px; */
@@ -78,7 +78,7 @@
         border-radius: 20px;
         background-color: transparent;
         overflow: hidden;
-        transition: transform 0.5s ease-out, border 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+        transition: transform 0.5s ease-out, border 0.3s ease-in-out;
 
     
         img {
@@ -90,7 +90,27 @@
     .thumbnail-container-btn:hover {
         transform: scale(1.1);
         border: 2px dashed white;
-        box-shadow: 0 0 10px;
+    }
+
+    .resume-download-btn {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        justify-items: center;
+        background-color: var(--SpaceIndigo);
+        border: 0;
+        border-radius: 20px;
+        color: var(--Amethyst);
+
+        > p {
+            font-size: 2rem;
+            margin-inline: 1em;
+        }
+
+        .download-icon {
+            scale: 2;
+            margin: 3rem;
+        }
     }
 
 
