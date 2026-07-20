@@ -12,6 +12,17 @@
     margin-inline: auto;
 }
 
+
+.title {
+    animation: riseUp 2s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both;
+}
+.se-block, .wrtr-block {
+    animation: riseUp 1.5s cubic-bezier(0.23, 1, 0.320, 1) 0.5s both;
+}
+.hero-foot {
+    animation: riseUp 1s cubic-bezier(0.23, 1, 0.320, 1) 0.75s both;
+}
+
 .sky {
     position: relative;
     padding: 2rem 2rem 0 2rem;
@@ -65,10 +76,12 @@
     grid-template-rows: 1fr;
 
     .horizon-line {
+        transform-origin: 50%;
         background-color: var(--InfiniteIndigo);
         grid-row: 1;
         height: auto;
         width: 100vw;
+        animation: expand 0.5s ease-out 0.2s both;
     }
 
     .sky-two, .ground-one, .ground-two, .sky-one {
@@ -90,21 +103,25 @@
         top: calc(50% - 100px);
         transform: translateY(-50%);
         left: 0;
+        animation: floatRight 1.5s cubic-bezier(0.23, 1, 0.320, 1) 0.25s both;
     }
     .sky-two {
         top: calc(50% - 50px);
         transform: translateY(-50%);
         left: 0;
+        animation: floatRight 1.5s cubic-bezier(0.23, 1, 0.320, 1) 0.5s both;
     }
     .ground-two {
         bottom: calc(50% - 100px);
         transform: translateY(50%);
         right: 0;
+        animation: floatLeft 1.5s cubic-bezier(0.23, 1, 0.320, 1) 0.5s both;
     }
     .ground-one { 
         bottom: calc(50% - 50px);
         transform: translateY(50%);
         right: 0;
+        animation: floatLeft 1.5s cubic-bezier(0.23, 1, 0.320, 1) 0.25s both;
     }
 
 }
@@ -140,10 +157,37 @@
 @keyframes riseUp {
     from {
         opacity: 0;
-        transform: translateY(-10%);
+        transform: translateY(10%);
     }
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes floatRight {
+    from {
+        transform: translate(-100%, -50%);
+    }
+    to {
+        transform: translate(0%, -50%);
+    }
+}
+
+@keyframes floatLeft {
+    from {
+        transform: translate(100%, 50%);
+    }
+    to {
+        transform: translate(0%, 50%);
+    }
+}
+
+@keyframes expand {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
     }
 }
