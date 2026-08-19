@@ -1,11 +1,58 @@
 :root {
+    --Raspberry: #DD1058;
     --Thistle: #D7C7DB;
     --Lavender: #C7AFCB;
     --Amethyst: #9079A9;
     --SpaceIndigo: #33345A;
     --InfiniteIndigo: #20243D;
+    --white: #ffffff;
 }
 
 body {
     margin: 0;
+    font-family: 'Barlow';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+a span {
+    position: relative;
+    z-index: 1;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.4em;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+    background-color: var(--Raspberry);
+}
+
+a:hover::before {
+    transform: scaleX(100%);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+
+a:not(:hover)::before {
+    transform-origin: right;
+}
+
+body::selection {
+    background-color: #20243D;
+    color: #D7C7DB;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
