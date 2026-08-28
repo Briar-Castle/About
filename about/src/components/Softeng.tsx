@@ -35,10 +35,12 @@ export default function Softeng () {
                     <p>Get my resume</p>
                     <div>
                         <button className="resume-download-btn">
-                            <p>
-                                12 July 2026
-                            </p>
-                            <Download className="download-icon"/>
+                            <a href="/resume.pdf" download>
+                                <p>
+                                    12 July 2026
+                                </p>
+                                <Download className="download-icon"/>
+                            </a>
                         </button>
                     </div>
                 </div>
