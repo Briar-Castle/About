@@ -1,10 +1,27 @@
 import { ArrowDown } from "lucide-react";
-import './Hero.css'
+import './Hero.css';
+import { clouds, cloud_reflection } from "../data/clouds_path";
 
 export default function Hero () {
     return (
         <>
         <div className="hero">
+        <section className="clouds">
+            {
+                (Object.keys(clouds) as Array<keyof typeof clouds>).map(cloud => {
+                    return (
+                        <div className={`cloud-pair ${cloud}`}>
+                            <div className="cloud sky-cloud">
+                                <img src={clouds[cloud]} />
+                            </div>
+                            <div className="cloud reflection-cloud">
+                                <img src={cloud_reflection[cloud]} />
+                            </div>
+                        </div>
+                    )
+                })
+            }
+        </section>
         <section className="sky">
             <div>
                 
