@@ -12,6 +12,9 @@
     margin-inline: auto;
 }
 
+.clouds {
+    display: none;
+}
 
 .title {
     animation: riseUp 2s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both;
@@ -25,7 +28,8 @@
 
 .sky {
     position: relative;
-    padding: 2rem 2rem 0 2rem;
+    padding: var(--sky-padding);
+    padding-bottom: 0;
 }
 
 .title {
@@ -54,8 +58,6 @@
     bottom: 0;
     right: 2rem;
     text-align: right;
-
-    
 }
 
 .se-block p, .wrtr-block p {
