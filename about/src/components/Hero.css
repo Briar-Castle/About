@@ -218,11 +218,7 @@
         background: linear-gradient(180deg, #90A4D7 0%, #B4A5C6 50%, #AFA0BF 60.1%, #6B77AB 79.81%, #303C6C 100%);
     }
 
-    .clouds{
-        display: block;
-        position: absolute;
-    }
-
+    
     .hero {
         grid-template-rows: 1fr 10px 1fr;
     }
@@ -240,12 +236,12 @@
         h1 {
             font-size: 4.375rem;
         }
-
+        
         .direct-download-link {
             font-size: 1.5rem;
         }
     }
-
+    
     .se-block {
         animation: none;
         position: absolute;
@@ -253,11 +249,11 @@
         left: 50%;
         transform: translateX(-50%); /* Must be negative to pull back to center */
     }
-
-
+    
+    
     .se-block, .wrtr-block {
         text-align: center;
-
+        
         h3 {
             font-size: 1.875rem;
         }
@@ -266,4 +262,63 @@
             font-size: 1.25rem;
         }
     }
+    
+    .clouds{
+        display: block;
+        position: absolute;
+        height: 100vh;
+    }
+    
+
+    .long_cloud {
+        top: 25vh;
+        row-gap: 30vh;
+        transform-origin: right;
+        animation: drift 30s linear 0s infinite both;
+    }
+
+    .long_cloud_cap {
+        top: 20vh; 
+        /* so long cloud is roghly 5vh */
+        row-gap: calc(35vh + 10vh + 5.4vh);
+        animation: drift 25s linear 5s infinite both;
+    }
+
+    .oddball {
+        top: 18vh;
+        row-gap: calc(35vh + 10vh); 
+        animation: drift 35s linear 7s infinite both;
+    }
+
+    .tiny_dough {
+        top: 13vh;
+        row-gap: calc(35vh + 10vh + 8vh);
+        animation: drift 30s linear 12s infinite both;
+    }
+
+    .cloud-pair {
+        display: grid;
+        position: absolute;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .sky-cloud{
+        grid-row: 1;
+    }
+
+    .reflection-cloud {
+        grid-row: 2;
+    }
+
+    @keyframes drift {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(-120vw);
+        }
+    }
+
+    /* font adjustments below 800 */
+
 }
