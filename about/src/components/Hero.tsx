@@ -11,10 +11,10 @@ export default function Hero () {
                     (Object.keys(clouds) as Array<keyof typeof clouds>).map(cloud => {
                         return (
                             <div className={`cloud-pair ${cloud}`}>
-                                <div className="cloud sky-cloud">
+                                <div className={`cloud sky-cloud ${cloud_reflection[cloud]}`}>
                                     <img src={clouds[cloud]} />
                                 </div>
-                                <div className="cloud reflection-cloud">
+                                <div className={`cloud reflection-cloud ${cloud_reflection[cloud]}`}>
                                     <img src={cloud_reflection[cloud]} />
                                 </div>
                             </div>
