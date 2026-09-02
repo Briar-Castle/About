@@ -8,6 +8,15 @@
     --white: #ffffff;
 
     --sky-padding: 2rem;
+
+    /* 1440px to 800px */
+    --title: clamp(4.375rem, 4.062vw - -2.344rem, 6.000rem);
+    --block-title: clamp(2.000rem, 0.625vw - -1.688rem, 2.250rem);
+    --site-block-subtitles: clamp(1.250rem, 0.625vw - -0.938rem, 1.500rem);
+    --main-text: clamp(1.500rem, 1.250vw - -0.875rem, 2.000rem);
+    --se-title: clamp(4.000rem, 10.000vw - 1.000rem, 8.000rem);
+    /* --icon-scale: clamp(16px, 1.43vw + 11.4px, 32px); */
+    --icon-scale: clamp(2.188rem, 2.031vw - -1.172rem, 3.000rem);
 }
 
 body {
