@@ -16,13 +16,13 @@
     h1 {
         font-family: 'Barlow';
         font-weight: normal;
-        font-size: 8rem;
+        font-size: var(--se-title);
         margin: 0.5em;
         color: var(--Thistle);
     }
     .sde-content {
         font-family: 'Barlow Semi Condensed';
-        font-size: 2rem;
+        font-size: var(--main-text);
         font-weight: 300;
         color: var(--white);
         text-align: center;
@@ -62,7 +62,7 @@
     }
 
     > div > p, .find-me-links{
-        font-size: 2rem;
+        font-size: var(--main-text);
         font-family: 'Barlow Semi Condensed';
     }
 
@@ -93,23 +93,31 @@
     }
 
     .resume-download-btn {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        align-items: center;
-        justify-items: center;
         background-color: var(--SpaceIndigo);
         border: 0;
         border-radius: 20px;
         color: var(--Amethyst);
+        
+        a {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            justify-items: center;
+        }
+        p {
+            font-size: var(--main-text);
+            margin: .5em 1em;
+        }
 
-        > p {
-            font-size: 2rem;
-            margin-inline: 1em;
+        > a::before {
+            display: none;
         }
 
         .download-icon {
-            scale: 2;
-            margin: 3rem;
+            grid-column: 2;
+            width: clamp(2.188rem, 2.031vw - -1.172rem, 3.000rem);
+            height: clamp(2.188rem, 2.031vw - -1.172rem, 3.000rem);
+            margin: clamp(0.500rem, 3.750vw - 1.375rem, 2.000rem);
         }
     }
 
