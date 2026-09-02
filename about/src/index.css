@@ -15,8 +15,15 @@
     --site-block-subtitles: clamp(1.250rem, 0.625vw - -0.938rem, 1.500rem);
     --main-text: clamp(1.500rem, 1.250vw - -0.875rem, 2.000rem);
     --se-title: clamp(4.000rem, 10.000vw - 1.000rem, 8.000rem);
-    /* --icon-scale: clamp(16px, 1.43vw + 11.4px, 32px); */
     --icon-scale: clamp(2.188rem, 2.031vw - -1.172rem, 3.000rem);
+
+    /* 800px to 360px */
+    --mob-title: clamp(3.625rem, 2.727vw - -3.011rem, 4.375rem);
+    --mob-block-title: clamp(1.250rem, 2.727vw - -0.636rem, 2.000rem);
+    --mob-subtitles: clamp(0.750rem, 1.818vw - -0.341rem, 1.250rem);
+    --mob-main-text: clamp(0.875rem, 2.273vw - -0.364rem, 1.500rem);
+    --mob-se-title: clamp(2.500rem, 5.455vw - -1.273rem, 4.000rem);
+    --mob-icon-scale: clamp(1.250rem, 3.409vw - -0.483rem, 2.188rem);
 }
 
 body {
