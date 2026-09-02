@@ -49,9 +49,6 @@
 
     .direct-download-link {
         font-size: var(--main-text);
-        white-space: nowrap;
-        overflow-x: auto;
-        padding: 10px;
     }
 
     .hero-subtitle {
@@ -251,7 +248,7 @@
     }
     
     .se-block {
-        animation: none;
+        animation: riseUpSETitle 1.5s cubic-bezier(0.23, 1, 0.320, 1) 0.5s both;
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -279,7 +276,7 @@
     }
     
     .short-download-text {
-        display: block;
+        display: inline;
     }
     .long-download-text {
         display: none;
@@ -332,6 +329,10 @@
         grid-row: 2;
     }
 
+    .horizon .horizon-line {
+        animation: floatRightHorizonLine 1.5s cubic-bezier(0.23, 1, 0.320, 1) 0.5s both; 
+    }
+
     @keyframes drift {
         from {
             transform: translateX(100vw);
@@ -342,5 +343,26 @@
     }
 
     /* font adjustments below 800 */
+
+
+    @keyframes riseUpSETitle {
+        from {
+            opacity: 0;
+            transform: translate(-30%);
+        }
+        to {
+            opacity: 1;
+            transform: translate(-50%);
+        }
+    }
+
+    @keyframes floatRightHorizonLine {
+        from {
+            transform: translate(-100%, -50%);
+        }
+        to {
+            transform: translate(0%, -50%);
+        }
+    }
 
 }
