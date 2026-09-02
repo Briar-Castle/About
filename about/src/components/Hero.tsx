@@ -34,8 +34,11 @@ export default function Hero () {
                         <p>
                             [&nbsp;
                             <a href="/resume.pdf" download>
-                                <span>
+                                <span className="long-download-text">
                                     Download Resume
+                                </span>
+                                <span className="short-download-text">
+                                    Get Resume
                                 </span>
                             </a>
                             &nbsp;]
