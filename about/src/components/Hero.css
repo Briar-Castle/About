@@ -39,12 +39,12 @@
 
     h1 {
         margin: 0;
-        font-size: 6rem;
+        font-size: var(--title);
         font-weight: 500;
     }
 
     .direct-download-link {
-        font-size: 2rem;
+        font-size: var(--main-text);
     }
 
     .hero-subtitle {
@@ -62,13 +62,13 @@
 }
 
 .se-block p, .wrtr-block p {
-    font-size: 1.5rem;
+    font-size: var(--site-block-subtitles);
     margin: 0;
 }
 
 .se-block h3, .wrtr-block h3 {
     margin: 1rem 0;
-    font-size: 2.25rem;
+    font-size: var(--block-title);
     font-weight: normal;
 }
 
@@ -135,6 +135,7 @@
 }
 
 .hero-foot {
+    /* scale this from top to lowest, not wirting it in @media */
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -146,7 +147,7 @@
     align-items: center;
 
     h3 {
-        font-size: 2.25rem;
+        font-size: var(--main-text);
         font-family: 'PT Mono';
         font-weight: normal;
         margin: 0.5em;
