@@ -33,10 +33,7 @@ export default function Hero () {
                     <div className="direct-download-link">
                         <p>
                             [&nbsp;
-                            <a href="/resume.pdf" download>
-                                <span className="long-download-text">
-                                    Download Resume
-                                </span>
+                            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                                 <span className="short-download-text">
                                     Get Resume
                                 </span>
