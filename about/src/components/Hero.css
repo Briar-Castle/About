@@ -27,9 +27,6 @@
     animation: riseUpFoot 1s cubic-bezier(0.23, 1, 0.320, 1) 0.75s both;
 }
 
-.short-download-text {
-    display: none;
-}
 
 .sky {
     position: relative;
@@ -275,12 +272,6 @@
         padding: 10px;
     }
     
-    .short-download-text {
-        display: inline;
-    }
-    .long-download-text {
-        display: none;
-    }
 
     .clouds{
         display: block;
